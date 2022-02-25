@@ -37,6 +37,15 @@ li a{
     .header__logo{
         grid-column: 5/9;  
         margin-top: 1rem;
+        animation-duration: 5s;
+        animation-name: aparecer;
+        animation-iteration-count:1;
+        animation-timing-function: linear;
+    }
+    
+    @keyframes aparecer{
+         0%{opacity: 0;}
+         100%{opacity: 1;}
     }
 
     .header__logo img{
@@ -109,6 +118,23 @@ li a{
         margin-left: 1rem;
         box-shadow: 0rem 0rem 1rem rgb(255, 255, 255);
         border-radius: 0.5rem;
+    }
+
+    .shadow{
+        animation-name:shadow;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+    }
+    
+    @keyframes shadow {
+        0%{box-shadow: 0rem 0rem 2rem rgb(0, 0, 0);}
+        25%{box-shadow: 0rem 0rem 2rem rgb(105, 103, 103);}
+        50%{box-shadow: 0rem 0rem 2rem rgb(204, 200, 200);}
+        75%{box-shadow: 0rem 0rem 2rem rgb(255, 255, 255);}
+        100%{box-shadow: 0rem 0rem 2rem rgb(0, 0, 0);}
+            
     }
 
     .portada__imagen img{
