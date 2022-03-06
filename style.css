@@ -44,6 +44,10 @@ header{
 nav{
     background-color: rgba(187, 186, 186, 0.048)
 }
+
+nav ul li a:hover{
+    color: rgb(65, 65, 65);
+}
 .dropdown-menu > li > a:hover {
     background-image: none;
     background-color: black;
@@ -53,90 +57,26 @@ nav{
     background-color: rgb(24, 24, 24)
 }
 
+.shadow{
+    animation-name:shadow;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+}
 
-
-
-
-
+@keyframes shadow {
+    0%{box-shadow: 0rem 0rem 2rem rgb(0, 0, 0);}
+    25%{box-shadow: 0rem 0rem 2rem rgb(105, 103, 103);}
+    50%{box-shadow: 0rem 0rem 2rem rgb(204, 200, 200);}
+    75%{box-shadow: 0rem 0rem 2rem rgb(255, 255, 255);}
+    100%{box-shadow: 0rem 0rem 2rem rgb(0, 0, 0);}
+        
+}
 
 /* @media only screen and (min-width:1024px)
 { */
 
-        /* HEADER */
-    /* header{
-        background-color: rgb(0, 0, 0);
-        display: grid;
-        grid-template-columns: repeat(12,1fr);
-        grid-template-rows: 8rem 3rem;
-    }
-
-    .header__logo{
-        grid-column: 5/9;  
-        margin-top: 1rem;
-        animation-duration: 5s;
-        animation-name: aparecer;
-        animation-iteration-count:1;
-        animation-timing-function: linear;
-    }
-    
-    @keyframes aparecer{
-         0%{opacity: 0;}
-         100%{opacity: 1;}
-    }
-
-    .header__logo img{
-        width: 100%;
-    }
-
-    nav{
-        grid-row: 2/3;
-        grid-column: 1/13;
-        background-color: rgba(187, 186, 186, 0.1);
-        position: relative;
-    }
-
-    .menu__navegacion {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        height: 100%;
-    }
-
-    .links__menu{
-        display: block; 
-        padding: 0.9rem;
-    }
-
-    .menu__navegacion li a:hover{
-        color: rgb(68, 63, 63);
-    }
-
-    .socialMedia {
-        position: absolute;
-        height: 100%;
-        top: 0px;
-        display: flex;
-        justify-content: flex-start;
-        margin-left: 1rem;
-    }
-
-    .socialMediaMenu{
-        list-style:none;
-        display: flex;
-        width: 15rem;
-        height: 100%;
-        align-items: center;
-        padding-left: 0.5rem;
-    }
-
-    .socialMediaMenu li a img{
-        width: 2rem;
-        padding: 0.5rem;
-    }
-
-    .socialMediaMobile{
-        display:none
-    } */
 
     /* HOME */
     /* .portada {
@@ -156,22 +96,7 @@ nav{
         border-radius: 0.5rem;
     }
 
-    .shadow{
-        animation-name:shadow;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-        animation-duration: 5s;
-        animation-fill-mode: both;
-    }
     
-    @keyframes shadow {
-        0%{box-shadow: 0rem 0rem 2rem rgb(0, 0, 0);}
-        25%{box-shadow: 0rem 0rem 2rem rgb(105, 103, 103);}
-        50%{box-shadow: 0rem 0rem 2rem rgb(204, 200, 200);}
-        75%{box-shadow: 0rem 0rem 2rem rgb(255, 255, 255);}
-        100%{box-shadow: 0rem 0rem 2rem rgb(0, 0, 0);}
-            
-    }
 
     .portada__imagen img{
         width: 100%;
