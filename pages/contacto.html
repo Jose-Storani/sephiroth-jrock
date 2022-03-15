@@ -1,91 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FAVICON -->
     <link rel="shortcut icon" href="../assets/imagenes/logos/favicon.ico">
-    <link rel="stylesheet" href="../style.css">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- LOCAL CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- ANIMATE -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+    <script src="https://kit.fontawesome.com/5416af3140.js" crossorigin="anonymous"></script>
     
     <title>Contacto | Sephiroth J-Rock</title>
 </head>
-<body>
-    <body>
-		<header> 
-            <div class="header__logo">
-                <a href="../index.html"><img src="../assets/imagenes/logos/Logo TRANSPARENTE Grande.png" alt="logobanda"> </a> 
-            </div> 
-            <nav>
-                
-                <ul class="menu__navegacion">
-                    <li>
-                        <a href="../index.html" class="links__menu" >Home</a> 
-                    </li>
-                    <li>
-                        <a href="./banda.html" class="links__menu">Banda</a> 
-                    </li>
-                    <li>
-                        <a href="./fotos.html" class="links__menu">Fotos</a> 
-                    </li>
-                    <li>
-                        <a href="./videos.html" class="links__menu">Videos</a> 
-                    </li>
-                    <li>
-                        <a href="./contacto.html" class="links__menu">Contacto</a> 
-                    </li>
-                </ul>
-
-                <ul class="socialMediaMobile">
-                    <li>
-                        <a href="https://www.youtube.com/channel/UC9sjTPsjyOsYDXelAn89bWA" target="_BLANK" > 
-                            <img src="../assets/imagenes/logos/logo youtube.ico" alt="logoyoutube" > 
-                        </a> 
-                    </li>
-                    <li> 
-                        <a href="https://www.facebook.com/sephiroth.music/" target="_BLANK"> 
-                            <img src="../assets/imagenes/logos/logo facebook.ico"  alt="logofacebook">
-                        </a> 
-                    </li>
-                    <li> 
-                        <a href="https://www.spotify.com/ar/" target="_BLANK"> 
-                            <img src="../assets/imagenes/logos/logo spotify.ico"alt="logospotify" >
-                        </a>
-                    </li>
-                    <li> 
-                        <a href="https://www.instagram.com/sephiroth.jrock/" target="_BLANK" > 
-                            <img src="../assets/imagenes/logos/logo_instagram.ico"   alt="logoinstagram" > 
-                        </a> 
-                    </li>  
-                </ul>
-                
-                <div class="socialMedia">
-                    <ul class="socialMediaMenu">
-                        <li> 
-                            <a href="https://www.youtube.com/channel/UC9sjTPsjyOsYDXelAn89bWA" target="_BLANK" > <img src="../assets/imagenes/logos/logo youtube.ico"> </a> 
+    <body class="d-flex flex-column"> 
+        <header class="container-fluid ">
+            <!-- LOGO -->
+            <div class="row justify-content-center header__logo">
+                <div class="  col-10 col-sm-6 col-lg-5 text-center m-2 " >
+                    <a href="../index.html" ><img class="w-75" src="../assets/imagenes/logos/Logo TRANSPARENTE Grande.png" alt="logobanda"> </a> 
+                </div>
+            </div>
+    
+            <!-- BARRA DE NAVEGACION -->
+            <!--NAV DEL SITIO  -->
+            <nav class="row ">
+                <div class="col-12 col-sm-8 col-md-6 col-lg-6" >
+                    <ul class="nav ajusteSize  justify-content-center justify-content-sm-start justify-content-md-center justify-content-lg-center ">
+                        <li class="nav-item"  >
+                            <a href="../index.html" class="nav-link text-white " >Home</a> 
                         </li>
-                        <li> 
-                            <a href="https://www.instagram.com/sephiroth.jrock/" target="_BLANK" > 
-                                <img src="../assets/imagenes/logos/logo_instagram.ico"   alt="logoinstagram" id="ajusteImg__instagramLogo"> 
-                            </a> 
-                        </li> 
-                        <li> 
-                            <a href="https://www.facebook.com/sephiroth.music/" target="_BLANK"> 
-                                <img src="../assets/imagenes/logos/logo facebook.ico"  alt="logofacebook">
-                            </a> 
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white " data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Banda</a>
+                            <ul class="dropdown-menu ">
+                                <li>
+                                    <a class="dropdown-item text-white " href="./historia.html">Historia</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item text-white " href="./videos.html">Videos</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item  text-white" href="./fotos.html">Fotos</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li> 
-                            <a href="https://www.spotify.com/ar/" target="_BLANK"> 
-                                <img src="../assets/imagenes/logos/logo spotify.ico"alt="logospotify" >
+                            
+                        <li class="nav-item">
+                            <a href="./contacto.html" class="nav-link text-white">Contacto</a> 
+                        </li>
+                    </ul>
+                </div>
+    
+                <!-- SOCIAL MEDIA NAVBAR -->
+                <div class="col-12 col-sm-4 col-md-3 order-sm-first">
+                    <ul class="nav justify-content-around justify-content-sm-center" >
+                        <li class="nav-item" >
+                            <a href="https://www.youtube.com/channel/UC9sjTPsjyOsYDXelAn89bWA" target="_blank"  class="nav-link text-white">
+                                <i class="fa-brands fa-youtube"></i>
                             </a>
                         </li>
-                        
-                    </ul> 
+    
+                        <li class="nav-item">
+                            <a href="https://www.facebook.com/sephiroth.music/" target="_BLANK" class="nav-link text-white">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </li>
+                            
+                        <li class="nav-item">
+                            <a href="https://www.instagram.com/sephiroth.jrock/" target="_BLANK" class="nav-link text-white">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </nav>
-        </header>   
+        </header>
 
         <!-- Formulario de contacto -->
         <section class="contacto">
@@ -118,17 +121,25 @@
         </section>
 
         <!-- FOOTER -->
+        <footer class="container-fluid mt-auto">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <span>
+                        © Sephiroth J-Rock 2022 | Vaal Records 
+                    </span>
+                </div>               
+                </div>
+        </footer>  
+    
+        <!-- JAVASCRIPT -->
+    
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
-        <footer>
-            <div class="footer__descripcion">
-                <span>
-                    © Sephiroth J-Rock 2022 | Vaal Records 
-                </span>
-            </div>
-        </footer> 
-        
+            
+        <!-- TUVE QUE AGREGAR ESTOS DOS SCRIPTS PARA QUE EL DROPDOWN FUNCIONE EN ESTA SECCION -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
     </body>
-       
 </html>
 
     

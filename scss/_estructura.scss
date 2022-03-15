@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+
+
+body{
+    font-size: 100%;
+    background-image: url("../assets/imagenes/Background/texturaprueba.jpg");
+    background-attachment:fixed ; 
+    background-position: center;
+    background-size: cover;
+    font-family: Libre Baskerville, Georgia, sans-serif;
+    color: whitesmoke;
+    
+    // PARA EL FOOTER AL FONDO
+    min-height: 100vh; 
+    display: flex; 
+    flex-direction: column;   
+}
