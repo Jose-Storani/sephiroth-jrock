@@ -22,10 +22,7 @@ header {
   background-color: black; }
 
 nav {
-  background-color: rgba(187, 186, 186, 0.048); }
-
-nav ul li a:hover {
-  color: #414141; }
+  background-color: black; }
 
 .dropdown-menu > li > a:hover {
   background-image: none;
@@ -34,14 +31,10 @@ nav ul li a:hover {
 .dropdown > ul {
   background-color: #181818; }
 
-footer {
+.colorFondo, footer, h5 {
   background-color: rgba(0, 0, 0, 0.822); }
 
-.historia__contenido {
-  background-color: rgba(0, 0, 0, 0.8); }
-
 h5 {
-  background-color: rgba(0, 0, 0, 0.671);
   display: inline; }
 
 .header__logo {

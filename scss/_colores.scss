@@ -1,25 +1,26 @@
+$fondo:black;
+$fondotransparente: rgba(0, 0, 0, 0.822);
 // HEADER AND NAVBAR
+
 
 li a{
     text-decoration: none;
-    color: rgb(255, 255, 255);
-}
+    color: rgb(255, 255, 255);  
+    }
+
 
 header{
-    background-color: black;
+    background-color: $fondo;
 }
 
 nav{
-    background-color: rgba(187, 186, 186, 0.048)
+    background-color:$fondo;
 }
 
-nav ul li a:hover{
-    color: rgb(65, 65, 65);
-}
 
 .dropdown-menu > li > a:hover {
     background-image: none;
-    background-color: black;
+    background-color: $fondo;
 }
 
 .dropdown > ul {
@@ -29,18 +30,16 @@ nav ul li a:hover{
 // FOOTER
 
 footer{
-    background-color: rgba(0, 0, 0, 0.822)
-
+    @extend .colorFondo
 }
 
-// SECCION HISTORIA
 
-.historia__contenido{
-    background-color: rgba(0, 0, 0,0.8);
+.colorFondo{
+    background-color: $fondotransparente;
 }
 
 // HISTORIA - NOMBRE INTEGRANTES
 h5{
-    background-color: rgba(0, 0, 0, 0.671);
+    @extend .colorFondo;
     display: inline;
 }
