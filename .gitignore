@@ -1,2 +1,5 @@
 /node_modules
 /datos.txt
+/package-lock.json
+/package.json
+/todolist.txt
