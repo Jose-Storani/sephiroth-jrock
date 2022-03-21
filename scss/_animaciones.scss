@@ -1,0 +1,12 @@
+.header__logo{
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count:1;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
+
+@keyframes aparecer{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
