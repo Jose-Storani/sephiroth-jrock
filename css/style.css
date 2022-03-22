@@ -31,10 +31,11 @@ nav {
 .dropdown > ul {
   background-color: #181818; }
 
-.colorFondo, footer, h5 {
+.colorFondo, footer {
   background-color: rgba(0, 0, 0, 0.822); }
 
 h5 {
+  background-color: rgba(0, 0, 0, 0.5);
   display: inline; }
 
 .header__logo {
