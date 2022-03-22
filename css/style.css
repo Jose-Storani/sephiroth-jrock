@@ -31,6 +31,9 @@ nav {
 .dropdown > ul {
   background-color: #181818; }
 
+#shadow {
+  box-shadow: 0rem 0rem 1rem white; }
+
 .colorFondo, footer {
   background-color: rgba(0, 0, 0, 0.822); }
 
